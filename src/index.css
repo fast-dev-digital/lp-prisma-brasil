@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+    scroll-padding-top: 5rem; /* Offset for fixed header */
+  }
   body {
     @apply bg-background text-primary font-sans antialiased;
   }

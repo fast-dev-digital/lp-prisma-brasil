@@ -4,7 +4,7 @@ import { Play } from 'lucide-react';
 
 export const VideoSection = () => {
   return (
-    <Section className="bg-surface border-y border-white/5">
+    <Section id="sobre" className="bg-surface border-y border-white/5">
       <Container size="md" className="text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-8">
           Entenda como esse método pode <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">transformar sua vida</span> em 30 dias

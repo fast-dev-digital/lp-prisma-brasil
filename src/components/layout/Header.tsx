@@ -5,6 +5,8 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// import logo from '../../assets/prisma-brasil-logo.png'; // <--- Descomente isso quando adicionar a imagem
+
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,10 +34,13 @@ export const Header = () => {
     >
       <Container className="flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-           {/* Logo placeholder - using text/icon for now */}
-           <div className="w-10 h-10 bg-gradient-to-tr from-pink-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-xl font-mono group-hover:scale-105 transition-transform">
-             P
+           {/* Logo Image Placeholder */}
+           {/* Quando subir a imagem, use: src={logo} */}
+           <div className="flex items-center justify-center">
+              <span className="text-2xl mr-2">✨</span> 
+              {/* <img src={logo} alt="Prisma Brasil" className="h-10 w-auto" /> */}
            </div>
+           
            <span className="text-xl font-bold tracking-tight text-white">Prisma<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">Brasil</span></span>
         </a>
 
