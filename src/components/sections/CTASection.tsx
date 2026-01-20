@@ -5,7 +5,7 @@ import { ShieldCheck, Clock } from 'lucide-react';
 
 export const CTASection = () => {
   return (
-    <Section className="py-24 relative overflow-hidden">
+    <Section id="cta" className="py-24 relative overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-black" />
       

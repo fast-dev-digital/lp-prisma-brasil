@@ -64,7 +64,12 @@ export const Header = () => {
 
          {/* CTA Button - Right Aligned (Desktop) */}
          <div className="hidden md:block z-50">
-             <Button variant="primary" size="md" className="font-bold text-base">
+             <Button 
+                variant="primary" 
+                size="md" 
+                className="font-bold text-base"
+                onClick={() => window.location.href = '#cta'}
+             >
                  Quero Participar
              </Button>
          </div>
@@ -98,7 +103,14 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-               <Button variant="primary" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
+               <Button 
+                  variant="primary" 
+                  fullWidth 
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    window.location.href = '#cta';
+                  }}
+                >
                 Quero Participar
               </Button>
             </Container>
