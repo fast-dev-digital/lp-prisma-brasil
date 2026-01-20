@@ -1,29 +1,76 @@
-
+import { useState } from 'react';
+import YouTube, { type YouTubeProps } from 'react-youtube';
 import { Section, Container } from '../layout';
-import { Play } from 'lucide-react';
+import { Button } from '../ui/Button';
+import { motion } from 'framer-motion';
 
 export const VideoSection = () => {
+  // Estado para controlar se o botão de compra aparece
+  const [showButton, setShowButton] = useState(false);
+
+  // SEU_ID_DO_VIDEO aqui
+  const VIDEO_ID = "rkJQQ7kG8QM"; 
+
+  const opts: YouTubeProps['opts'] = {
+    height: '100%',
+    width: '100%',
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      rel: 0,
+      modestbranding: 1,
+      showinfo: 0,
+    },
+  };
+
+  const onStateChange: YouTubeProps['onStateChange'] = (event) => {
+    // 0 = Ended (Vídeo terminou)
+    if (event.data === 0) {
+      setShowButton(true);
+    }
+  };
+
   return (
-    <Section id="sobre" className="bg-surface border-y border-white/5">
-      <Container size="md" className="text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">
-          Entenda como esse método pode <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">transformar sua vida</span> em 30 dias
-        </h2>
+    <Section id="vsl" className="bg-black text-white py-20 border-t border-white/5">
+      <Container size="md" className="flex flex-col items-center">
         
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black border border-white/10 shadow-2xl group cursor-pointer">
-            {/* Placeholder for video file or embed */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-900/80 group-hover:bg-gray-900/60 transition-colors">
-                 <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-300">
-                    <Play size={32} className="ml-1 text-white fill-white" />
-                 </div>
-            </div>
-            
-            {/* Overlay Text */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-left">
-                <p className="text-white font-medium">Assista à apresentação completa</p>
-                <p className="text-sm text-gray-400">Duração: 05:32</p>
-            </div>
+        {/* Título com o Gradiente "Prisma" (Pink -> Purple -> Blue) */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          Veja como <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">transformar sua vida</span> agora
+        </h2>
+
+        {/* Wrapper do Vídeo */}
+        <div className="w-full max-w-4xl aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-2xl shadow-purple-900/20 border border-white/10 relative group">
+          {/* Efeito de brilho atrás do vídeo (opcional, para dar destaque) */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-20 blur-lg group-hover:opacity-30 transition duration-1000"></div>
+          
+          <YouTube 
+            videoId={VIDEO_ID} 
+            opts={opts} 
+            onStateChange={onStateChange}
+            className="absolute top-0 left-0 w-full h-full relative z-10"
+            iframeClassName="w-full h-full"
+          />
         </div>
+
+        {/* Botão com Delay - Agora usando o gradiente padrão do tema */}
+        {showButton && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-12"
+          >
+            <Button 
+              size="lg" 
+              variant="primary" /* Usa o gradiente definido no seu Button.tsx */
+              className="px-12 py-6 text-xl shadow-xl shadow-purple-500/20 animate-pulse hover:animate-none"
+            >
+              QUERO GARANTIR MINHA VAGA
+            </Button>
+          </motion.div>
+        )}
+
       </Container>
     </Section>
   );
