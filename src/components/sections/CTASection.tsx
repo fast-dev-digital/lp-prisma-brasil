@@ -23,7 +23,7 @@ export const CTASection = () => {
             <span className="text-green-400 font-medium">ou 12x de R$ 9,90</span>
         </div>
 
-        <Button size="lg" className="w-full md:w-auto px-12 py-4 text-xl hover:scale-105 mb-6">
+        <Button size="lg" className="w-full md:w-auto mx-auto px-12 py-4 text-xl hover:scale-105 mb-6">
             GARANTIR MINHA VAGA AGORA
         </Button>
 

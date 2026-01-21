@@ -62,9 +62,9 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center relative mt-10 md:mt-0"
+            className="flex justify-center relative mt-12 md:mt-0"
         >
-             <div className="relative w-full aspect-square max-w-lg md:max-w-xl">
+             <div className="relative w-full aspect-[3/4] md:max-w-md lg:max-w-lg">
                  {/* Decorative circles/glow */}
                  <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-blue-500/20 blur-3xl rounded-full animate-pulse" />
                  
