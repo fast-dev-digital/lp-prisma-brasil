@@ -1,5 +1,7 @@
 
 import { Container } from './index';
+import { Mail, Instagram } from 'lucide-react';
+import logo from '../../assets/logo-prisma-brasil.png';
 
 export const Footer = () => {
   return (
@@ -8,7 +10,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
                 <div className="flex items-center gap-2 mb-4 justify-center md:justify-start">
-                    <div className="w-8 h-8 rounded bg-gradient-to-tr from-pink-500 to-blue-500 flex items-center justify-center font-bold text-white">P</div>
+                    <img src={logo} alt="Prisma Brasil" className="h-20 w-auto object-contain" />
                     <span className="font-bold text-xl text-white">Prisma Brasil</span>
                 </div>
                 <p className="text-gray-400 text-sm max-w-xs mx-auto md:mx-0">
@@ -28,8 +30,14 @@ export const Footer = () => {
             <div>
                 <h4 className="font-bold text-white mb-4">Contato</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                    <li>contato@prismabrasil.com</li>
-                    <li>@prismabrasil</li>
+                    <li className="flex items-center gap-2 justify-center md:justify-start">
+                        <Mail size={16} className="text-white" />
+                        <span>contato@prismabrasil.com</span>
+                    </li>
+                    <li className="flex items-center gap-2 justify-center md:justify-start">
+                        <Instagram size={16} className="text-white" />
+                        <span>@prismabrasil</span>
+                    </li>
                 </ul>
             </div>
         </div>
