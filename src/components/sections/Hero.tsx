@@ -3,6 +3,7 @@ import { Section, Container } from '../layout';
 import { Button } from '../ui/Button';
 import { motion } from 'framer-motion';
 import { ChevronRight, Star } from 'lucide-react';
+import bookCover from '../../assets/capa-livro1-prismabrasil.png';
 
 export const Hero = () => {
   return (
@@ -61,22 +62,19 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:flex justify-center relative"
+            className="flex justify-center relative mt-10 md:mt-0"
         >
-             <div className="relative w-full aspect-square max-w-md">
+             <div className="relative w-full aspect-square max-w-lg md:max-w-xl">
                  {/* Decorative circles/glow */}
                  <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-blue-500/20 blur-3xl rounded-full animate-pulse" />
                  
                  {/* Main Image Container */}
-                 <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-gray-900/50 backdrop-blur-sm flex items-center justify-center group">
-                      {/* You would ideally put an actual product cover or inspirational image here */}
-                      <div className="text-center p-8">
-                          <div className="w-24 h-24 mx-auto bg-gradient-to-br from-pink-500 to-blue-500 rounded-full mb-6 flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform duration-500">
-                             <Star size={48} className="text-white" fill="currentColor" />
-                          </div>
-                          <h3 className="text-2xl font-bold mb-2">Manual do Propósito</h3>
-                          <p className="text-gray-400">Edição Limitada</p>
-                      </div>
+                 <div className="relative z-10 w-full h-full flex items-center justify-center group">
+                      <img 
+                        src={bookCover} 
+                        alt="Capa do Livro Manual do Propósito" 
+                        className="max-w-full max-h-full object-contain drop-shadow-2xl rounded-3xl hover:scale-105 transition-transform duration-500"
+                      />
                  </div>
              </div>
         </motion.div>
