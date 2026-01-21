@@ -1,9 +1,9 @@
 export const WhatsAppButton = () => {
   // ⚠️ IMPORTANTE: Substitua pelo número real do suporte
-  const phoneNumber = "5511999999999"; 
+  const phoneNumber = "5519981235235"; 
   
   // Mensagem já codificada para URL
-  const message = encodeURIComponent("Olá! Gostaria de tirar dúvidas sobre o infoproduto.");
+  const message = encodeURIComponent("Olá! Gostaria de tirar dúvidas sobre o infoproduto do Prisma Brasil.");
 
   return (
     <a
