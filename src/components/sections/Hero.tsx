@@ -25,14 +25,14 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Descubra o Propósito <br />
+            Renove suas forças <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
-              Que Deus Tem Para Você
+              30 dias para transformar sua intimidade com Deus
             </span>
           </h1>
           
           <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg">
-            Um guia prático e espiritual para quem busca clareza, direção e uma vida alinhada com os princípios do Reino. Transforme sua fé em ação.
+            Um devocional diário escrito para acompanhar você em momentos de alegria, angústia e silêncio, revelando o amor de Deus nas situações do cotidiano
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -53,7 +53,7 @@ export const Hero = () => {
                 </div>
               ))}
             </div>
-            <p>Junte-se a mais de <span className="text-white font-semibold">1.200 alunos</span></p>
+            <p>Junte-se a mais de <span className="text-white font-semibold">1.200 vidas impactadas</span></p>
           </div>
         </motion.div>
         

@@ -1,6 +1,6 @@
 
 import { Section, Container } from '../layout';
-import { BookOpen, Heart, Shield, Zap } from 'lucide-react';
+import { BookOpen, Heart, Shield, Infinity, Music } from 'lucide-react';
 
 export const BenefitsSection = () => {
     const benefits = [
@@ -11,18 +11,23 @@ export const BenefitsSection = () => {
         },
         {
             icon: <Heart className="text-purple-500" size={28} />,
-            title: "Cura Emocional",
-            description: "Ferramentas práticas para lidar com ansiedade, medo e insegurança à luz da fé."
+            title: "Consolo na Angústia",
+            description: "Encontre paz para os dias difíceis através da oração e da consciência da presença divina."
         },
         {
-            icon: <Zap className="text-yellow-500" size={28} />,
-            title: "Clareza de Propósito",
-            description: "Descubra exatamente o que você foi chamado para fazer nesta geração."
+            icon: <Infinity className="text-yellow-500" size={28} />,
+            title: "Foco na Eternidade",
+            description: "Aprenda a olhar para além dos sofrimentos momentâneos, fixando os olhos na recompensa que vale a pena."
         },
         {
             icon: <Shield className="text-blue-500" size={28} />,
             title: "Fortalecimento Espiritual",
             description: "Crie uma rotina devocional inabalável e blinde sua mente contra o mal."
+        },
+        {
+            icon: <Music className="text-green-400" size={28} />,
+            title: "Experiência Musical",
+            description: "Meditações integradas com canções exclusivas do Grupo Prisma Brasil via QR Code."
         }
     ];
 
@@ -34,8 +39,8 @@ export const BenefitsSection = () => {
                 Benefícios Exclusivos
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                O que você vai <br /> 
-                <span className="text-white">conquistar</span> com este guia
+                Como sua fé será <br /> 
+                <span className="text-white">renovada</span> nestes 30 dias
             </h2>
             <p className="text-gray-400 mb-8 max-w-md">
                 Não é apenas um ebook ou curso, é um manual de sobrevivência e crescimento para o cristão moderno.
@@ -61,14 +66,17 @@ export const BenefitsSection = () => {
              <div className="relative z-10 bg-black border border-white/10 rounded-2xl p-8 shadow-2xl">
                  {/* Visual representation of content (e.g., Chapter list) */}
                  <div className="space-y-4">
-                     {[1, 2, 3].map((i) => (
-                         <div key={i} className="flex items-center gap-4 p-4 rounded-lg bg-surface/50 border border-white/5">
-                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-gray-500">
-                                 0{i}
+                     {[
+                        "A Chegada Vai Valer a Pena",
+                        "Angústia, Suor e Sangue",
+                        "A Palavra-Chave é Obediência"
+                     ].map((title, i) => (
+                         <div key={i} className="flex items-center gap-4 p-4 rounded-lg bg-surface/50 border border-white/5 hover:bg-white/5 transition-colors">
+                             <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-gray-500 flex-shrink-0">
+                                 0{i + 1}
                              </div>
                              <div className="flex-1">
-                                 <div className="h-2 w-3/4 bg-white/10 rounded mb-2" />
-                                 <div className="h-2 w-1/2 bg-white/5 rounded" />
+                                 <h4 className="font-medium text-white text-sm md:text-base line-clamp-1">{title}</h4>
                              </div>
                          </div>
                      ))}

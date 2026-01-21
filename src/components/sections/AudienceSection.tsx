@@ -17,8 +17,8 @@ export const AudienceSection = () => {
             description: "Que querem construir um lar fundamentado nos princípios eternos."
         },
         {
-            title: "Empreendedores",
-            description: "Que buscam alinhar seus negócios com seus valores de fé."
+            title: "Cristãos Cansados",
+            description: "Para quem sente o peso da jornada e precisa de um lembrete diário de que a luz de Cristo não se apaga."
         }
     ];
 
