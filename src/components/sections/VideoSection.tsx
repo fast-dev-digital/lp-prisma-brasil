@@ -58,7 +58,7 @@ export const VideoSection = () => {
               document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            QUERO GARANTIR MINHA VAGA
+            GARANTIR MEU EXEMPLAR AGORA
           </Button>
         </motion.div>
 

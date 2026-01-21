@@ -1,6 +1,7 @@
 
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
+import { WhatsAppButton } from './components/layout/WhatsAppButton';
 import { Hero } from './components/sections/Hero';
 import { VideoSection } from './components/sections/VideoSection';
 import { AudienceSection } from './components/sections/AudienceSection';
@@ -21,6 +22,7 @@ function App() {
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

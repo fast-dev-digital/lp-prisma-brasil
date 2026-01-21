@@ -25,7 +25,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Renove suas forças <br />
+            Renove suas forças: <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
               30 dias para transformar sua intimidade com Deus
             </span>
