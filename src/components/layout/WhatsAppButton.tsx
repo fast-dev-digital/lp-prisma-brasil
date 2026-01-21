@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const WhatsAppButton = () => {
   // ⚠️ IMPORTANTE: Substitua pelo número real do suporte
   const phoneNumber = "5511999999999"; 
