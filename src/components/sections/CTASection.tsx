@@ -24,7 +24,7 @@ export const CTASection = () => {
         </div>
 
         <Button size="lg" className="w-full md:w-auto mx-auto px-12 py-4 text-xl hover:scale-105 mb-6">
-            GARANTIR MINHA VAGA AGORA
+            GARANTIR MEU EXEMPLAR AGORA
         </Button>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">

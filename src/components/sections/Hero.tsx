@@ -37,7 +37,7 @@ export const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="w-full sm:w-auto hover:scale-105">
-              Quero Minha Transformação
+              Quero Renovar Minha Fé
               <ChevronRight size={20} />
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">
