@@ -9,7 +9,8 @@ export const Hero = () => {
   return (
     <Section className="min-h-screen flex items-center pt-32 pb-20 bg-[url('/bg-hero.jpg')] bg-cover bg-center bg-no-repeat relative">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-[#050505] z-0" />
+      <div className="absolute inset-0 bg-black/90 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-[#050505] z-0" />
       
       <Container className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
@@ -26,7 +27,7 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             Renove suas forças: <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+            <span className="text-white">
               30 dias para transformar sua intimidade com Deus
             </span>
           </h1>

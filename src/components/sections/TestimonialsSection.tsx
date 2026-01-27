@@ -29,7 +29,7 @@ export const TestimonialsSection = () => {
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            O que dizem quem já <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">viveu essa experiência</span>
+            O que dizem quem já <span className="text-white">viveu essa experiência</span>
           </h2>
         </div>
 
@@ -44,7 +44,7 @@ export const TestimonialsSection = () => {
                     <p className="text-gray-300 mb-6 leading-relaxed">"{item.content}"</p>
                     
                     <div className="flex items-center gap-4">
-                        <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full ring-2 ring-purple-500/20" />
+                        <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full ring-2 ring-white/10" />
                         <div>
                             <h4 className="font-bold text-white">{item.name}</h4>
                             <p className="text-xs text-gray-500 uppercase tracking-wide">{item.role}</p>

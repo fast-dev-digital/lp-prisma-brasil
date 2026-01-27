@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         'prisma-gradient': 'linear-gradient(to right, #ec4899, #8b5cf6, #3b82f6)',
+        'rainbow': 'linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3)',
       }
     },
   },

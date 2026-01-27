@@ -25,13 +25,13 @@ export const VideoSection = () => {
         
         {/* Título com o Gradiente "Prisma" */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Veja como <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">transformar sua vida</span> agora
+          Veja como <span className="text-white">transformar sua vida</span> agora
         </h2>
 
         {/* Wrapper do Vídeo */}
         <div className="w-full max-w-4xl aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-2xl shadow-purple-900/20 border border-white/10 relative group mb-10">
           {/* Efeito de brilho atrás do vídeo */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-20 blur-lg group-hover:opacity-30 transition duration-1000"></div>
+          <div className="absolute -inset-1 bg-rainbow opacity-20 blur-lg group-hover:opacity-30 transition duration-1000"></div>
           
           <YouTube 
             videoId={VIDEO_ID} 

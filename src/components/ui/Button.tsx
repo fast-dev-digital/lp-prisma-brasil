@@ -11,16 +11,16 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', fullWidth = false, children, ...props }, ref) => {
     const variants = {
-      primary: 'bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white hover:opacity-90 shadow-lg shadow-purple-500/20',
+      primary: 'bg-gray-100 text-black border-2 border-white hover:bg-white relative overflow-hidden after:absolute after:bottom-0 after:left-0 after:right-0 after:h-1 after:bg-rainbow rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1',
+      outline: 'bg-transparent text-white border border-white hover:border-transparent relative z-10 before:absolute before:-inset-[2px] before:-z-10 before:rounded-full before:bg-rainbow before:opacity-0 hover:before:opacity-100 before:transition-opacity',
       secondary: 'bg-white text-black hover:bg-gray-100',
-      outline: 'border border-white/20 text-white hover:bg-white/10',
       ghost: 'text-gray-400 hover:text-white hover:bg-white/5',
     };
 
     const sizes = {
       sm: 'px-4 py-2 text-sm',
       md: 'px-6 py-3 text-base',
-      lg: 'px-8 py-4 text-lg font-semibold',
+      lg: 'px-8 py-4 text-lg font-bold',
     };
 
     return (
@@ -29,7 +29,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         className={cn(
-          'rounded-full transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed',
+          'transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed',
           variants[variant],
           sizes[size],
           fullWidth ? 'w-full' : '',

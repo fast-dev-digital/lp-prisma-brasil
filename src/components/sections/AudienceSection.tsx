@@ -25,8 +25,8 @@ export const AudienceSection = () => {
   return (
     <Section id="quem-somos" className="bg-black relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-blue-500/10 rounded-full blur-[100px]" />
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-pink-500/10 rounded-full blur-[100px]" />
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-rainbow opacity-10 rounded-full blur-[100px]" />
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-rainbow opacity-10 rounded-full blur-[100px]" />
 
       <Container>
         <div className="text-center mb-16">

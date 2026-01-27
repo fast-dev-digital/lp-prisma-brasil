@@ -5,12 +5,12 @@ import { BookOpen, Heart, Shield, Infinity, Music } from 'lucide-react';
 export const BenefitsSection = () => {
     const benefits = [
         {
-            icon: <BookOpen className="text-pink-500" size={28} />,
+            icon: <BookOpen className="text-red-500" size={28} />,
             title: "Conhecimento Bíblico Profundo",
             description: "Vá além do superficial com estudos baseados em teologia sólida e aplicável."
         },
         {
-            icon: <Heart className="text-purple-500" size={28} />,
+            icon: <Heart className="text-orange-500" size={28} />,
             title: "Consolo na Angústia",
             description: "Encontre paz para os dias difíceis através da oração e da consciência da presença divina."
         },
@@ -20,12 +20,12 @@ export const BenefitsSection = () => {
             description: "Aprenda a olhar para além dos sofrimentos momentâneos, fixando os olhos na recompensa que vale a pena."
         },
         {
-            icon: <Shield className="text-blue-500" size={28} />,
+            icon: <Shield className="text-green-500" size={28} />,
             title: "Fortalecimento Espiritual",
             description: "Crie uma rotina devocional inabalável e blinde sua mente contra o mal."
         },
         {
-            icon: <Music className="text-green-400" size={28} />,
+            icon: <Music className="text-blue-500" size={28} />,
             title: "Experiência Musical",
             description: "Meditações integradas com canções exclusivas do Grupo Prisma Brasil via QR Code."
         }
@@ -35,7 +35,7 @@ export const BenefitsSection = () => {
     <Section className="bg-surface/50 border-y border-white/5">
       <Container className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-            <span className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 uppercase tracking-wider mb-2 block">
+            <span className="text-sm font-bold text-white uppercase tracking-wider mb-2 block">
                 Benefícios Exclusivos
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
@@ -62,7 +62,7 @@ export const BenefitsSection = () => {
         </div>
 
         <div className="relative">
-             <div className="absolute inset-0 bg-gradient-to-tr from-pink-500 to-purple-500 blur-[60px] opacity-20" />
+             <div className="absolute inset-0 bg-rainbow blur-[60px] opacity-20" />
              <div className="relative z-10 bg-black border border-white/10 rounded-2xl p-8 shadow-2xl">
                  {/* Visual representation of content (e.g., Chapter list) */}
                  <div className="space-y-4">
@@ -80,7 +80,7 @@ export const BenefitsSection = () => {
                              </div>
                          </div>
                      ))}
-                      <div className="p-4 rounded-lg bg-gradient-to-r from-pink-500/10 to-blue-500/10 border border-pink-500/20 text-center text-sm font-medium text-white mt-4">
+                      <div className="p-4 rounded-lg bg-rainbow/10 border border-white/10 text-center text-sm font-medium text-white mt-4">
                           + Bônus Exclusivos Inclusos
                       </div>
                  </div>
