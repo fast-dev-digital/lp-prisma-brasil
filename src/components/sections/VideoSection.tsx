@@ -54,8 +54,7 @@ export const VideoSection = () => {
             variant="primary" /* Usa o gradiente padrão do seu tema */
             className="w-full sm:w-auto px-12 py-6 text-xl shadow-xl shadow-purple-500/20 animate-pulse hover:animate-none"
             onClick={() => {
-              // Exemplo: Scroll suave para a seção de Checkout ou Link externo
-              document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+              window.open('https://pay.kiwify.com.br/TpboKkz', '_blank');
             }}
           >
             GARANTIR MEU EXEMPLAR AGORA

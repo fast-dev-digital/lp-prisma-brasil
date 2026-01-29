@@ -24,7 +24,7 @@ export const CTASection = () => {
             <span className="text-green-400 font-medium">ou 9x de R$ 5,24</span>
         </div>
 
-        <Button size="lg" className="w-full md:w-auto mx-auto px-12 py-4 text-xl hover:scale-105 mb-6">
+        <Button size="lg" className="w-full md:w-auto mx-auto px-12 py-4 text-xl hover:scale-105 mb-6" onClick={() => window.open('https://pay.kiwify.com.br/TpboKkz', '_blank')}>
             GARANTIR MEU EXEMPLAR AGORA
         </Button>
 

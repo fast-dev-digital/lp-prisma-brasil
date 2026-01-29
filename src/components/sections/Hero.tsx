@@ -37,7 +37,7 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="w-full sm:w-auto hover:scale-105">
+            <Button size="lg" className="w-full sm:w-auto hover:scale-105" onClick={() => window.open('https://pay.kiwify.com.br/TpboKkz', '_blank')}>
               Quero Renovar Minha Fé
               <ChevronRight size={20} />
             </Button>
