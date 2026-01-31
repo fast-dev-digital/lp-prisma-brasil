@@ -68,7 +68,7 @@ export const Header = () => {
                 variant="primary" 
                 size="md" 
                 className="font-bold text-base"
-                onClick={() => window.open('https://pay.kiwify.com.br/TpboKkz', '_blank')}
+                onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
              >
                  Quero Participar
              </Button>
@@ -108,7 +108,7 @@ export const Header = () => {
                   fullWidth 
                   onClick={() => {
                     setIsMobileMenuOpen(false);
-                    window.open('https://pay.kiwify.com.br/TpboKkz', '_blank');
+                    document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
                 Quero Participar
