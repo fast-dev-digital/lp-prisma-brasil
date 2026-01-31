@@ -4,13 +4,21 @@ import { Button } from '../ui/Button';
 import { motion } from 'framer-motion';
 import { ChevronRight, Star } from 'lucide-react';
 import bookCover from '../../assets/capa-livro1-prismabrasil.png';
+import heroBg from '../../assets/hero-official.webp';
 
 export const Hero = () => {
   return (
-    <Section className="min-h-screen flex items-center pt-32 pb-20 bg-[url('/bg-hero.jpg')] bg-cover bg-center bg-no-repeat relative">
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/90 z-0" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-[#050505] z-0" />
+    <Section className="min-h-screen flex items-center pt-32 pb-20 relative overflow-hidden isolate">
+      {/* Background Image - LCP Optimized */}
+      <img 
+        src={heroBg} 
+        alt="Prisma Brasil Oficial" 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        fetchPriority="high"
+      />
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0" />
       
       <Container className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
