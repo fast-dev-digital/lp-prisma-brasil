@@ -5,20 +5,20 @@ import { CheckCircle2 } from 'lucide-react';
 export const AudienceSection = () => {
     const audiences = [
         {
-            title: "Líderes de Ministério",
-            description: "Que desejam inspirar seus membros com uma visão clara e espiritual."
+            title: "Admiradores do Prisma",
+            description: "Que cresceram ouvindo nossos hinos e querem conhecer o coração de quem os compôs."
         },
         {
-            title: "Jovens Cristãos",
-            description: "Em busca de propósito e direção em um mundo cheio de distrações."
+            title: "Quem Busca Profundidade",
+            description: "Cansado de mensagens rasas? Aqui você encontra Bíblia e vida real."
         },
         {
-            title: "Pais e Mães",
-            description: "Que querem construir um lar fundamentado nos princípios eternos."
+            title: "Líderes e Músicos",
+            description: "Que desejam entender como manter um ministério relevante e fiel por 45 anos."
         },
         {
-            title: "Cristãos Cansados",
-            description: "Para quem sente o peso da jornada e precisa de um lembrete diário de que a luz de Cristo não se apaga."
+            title: "Famílias Cristãs",
+            description: "Que buscam devocionais seguros e edificantes para compartilhar em casa."
         }
     ];
 

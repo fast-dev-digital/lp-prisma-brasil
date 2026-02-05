@@ -15,13 +15,13 @@ export const CTASection = () => {
           Inicie Sua Caminhada De Renovação Hoje Mesmo
         </h2>
         <p className="text-xl text-gray-300 mb-8">
-          Tenha acesso vitalício ao devocional completo e atualizações futuras.
+          Tenha acesso vitalício ao devocional completo por R$1 por dia.
         </p>
 
         <div className="flex flex-col items-center gap-2 mb-8">
-            <span className="text-gray-400 line-through text-lg">De R$ 97,90</span>
-            <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">R$ 39,90</span>
-            <span className="text-green-400 font-medium">ou 9x de R$ 5,24</span>
+            <span className="text-gray-400 line-through text-lg">De R$ 49,90</span>
+            <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">R$ 30,00</span>
+            <span className="text-green-400 font-medium">ou 6x de R$ 5,63</span>
         </div>
 
         <Button size="lg" className="w-full md:w-auto mx-auto px-12 py-4 text-xl hover:scale-105 mb-6" onClick={() => window.open('https://pay.kiwify.com.br/TpboKkz', '_blank')}>

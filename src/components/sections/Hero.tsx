@@ -29,24 +29,24 @@ export const Hero = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 backdrop-blur-sm mb-6">
             <span className="flex items-center gap-1 text-yellow-400 text-xs font-semibold">
               <Star size={12} fill="currentColor" /> 
-              #1 Infoproduto Gospel
+              Edição Comemorativa • 45 Anos de História
             </span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Renove suas forças: <br />
+            Não é apenas um devocional. <br />
             <span className="text-white">
-              30 dias para transformar sua intimidade com Deus
+              É a história do Prisma Brasil edificando a sua fé.
             </span>
           </h1>
           
           <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg">
-            Um devocional diário escrito para acompanhar você em momentos de alegria, angústia e silêncio, revelando o amor de Deus nas situações do cotidiano
+            Descubra os bastidores espirituais das canções que marcaram gerações. 30 dias de reflexões baseadas em experiências reais de nossas turnês e fundamentadas na Palavra de Deus.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="w-full sm:w-auto hover:scale-105" onClick={() => window.open('https://pay.kiwify.com.br/TpboKkz', '_blank')}>
-              Quero Renovar Minha Fé
+              Quero Iniciar Minha Jornada
               <ChevronRight size={20} />
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">

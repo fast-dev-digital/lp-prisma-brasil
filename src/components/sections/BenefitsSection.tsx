@@ -5,29 +5,29 @@ import { BookOpen, Heart, Shield, Infinity, Music } from 'lucide-react';
 export const BenefitsSection = () => {
     const benefits = [
         {
+            icon: <Music className="text-blue-500" size={28} />,
+            title: "A História por Trás da Canção",
+            description: "Entenda a inspiração real e bíblica de clássicos como Agradeço ao Pai e como eles se aplicam à sua luta hoje."
+        },
+        {
             icon: <BookOpen className="text-red-500" size={28} />,
-            title: "Conhecimento Bíblico Profundo",
-            description: "Vá além do superficial com estudos baseados em teologia sólida e aplicável."
-        },
-        {
-            icon: <Heart className="text-orange-500" size={28} />,
-            title: "Consolo na Angústia",
-            description: "Encontre paz para os dias difíceis através da oração e da consciência da presença divina."
-        },
-        {
-            icon: <Infinity className="text-yellow-500" size={28} />,
-            title: "Foco na Eternidade",
-            description: "Aprenda a olhar para além dos sofrimentos momentâneos, fixando os olhos na recompensa que vale a pena."
+            title: "Teologia, não Autoajuda",
+            description: "Cada dia é fundamentado nas Escrituras (Ex: Filipenses), trazendo a mesma profundidade doutrinária dos nossos 45 álbuns."
         },
         {
             icon: <Shield className="text-green-500" size={28} />,
-            title: "Fortalecimento Espiritual",
-            description: "Crie uma rotina devocional inabalável e blinde sua mente contra o mal."
+            title: "45 Anos de Experiência",
+            description: "Aprenda com quem já viveu milagres, provações e vitórias em décadas de ministério pelo mundo."
         },
         {
-            icon: <Music className="text-blue-500" size={28} />,
-            title: "Experiência Musical",
-            description: "Meditações integradas com canções exclusivas do Grupo Prisma Brasil via QR Code."
+            icon: <Heart className="text-orange-500" size={28} />,
+            title: "Consolo Real",
+            description: "Mensagens para momentos de angústia, escritas por quem viveu a realidade da estrada e da fé na prática."
+        },
+        {
+            icon: <Infinity className="text-yellow-500" size={28} />,
+            title: "Legado para sua Família",
+            description: "Princípios eternos que sustentaram o Prisma Brasil e vão fortalecer a base da sua casa."
         }
     ];
 
@@ -67,9 +67,9 @@ export const BenefitsSection = () => {
                  {/* Visual representation of content (e.g., Chapter list) */}
                  <div className="space-y-4">
                      {[
-                        "A Chegada Vai Valer a Pena",
-                        "Angústia, Suor e Sangue",
-                        "A Palavra-Chave é Obediência"
+                        "Dia 01: O Segredo de Filipenses",
+                        "Dia 07: Agradeço ao Pai (Bastidores)",
+                        "Dia 15: Quando a Estrada é Longa"
                      ].map((title, i) => (
                          <div key={i} className="flex items-center gap-4 p-4 rounded-lg bg-surface/50 border border-white/5 hover:bg-white/5 transition-colors">
                              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-gray-500 flex-shrink-0">
