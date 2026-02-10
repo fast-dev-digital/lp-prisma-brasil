@@ -15,12 +15,12 @@ export const CTASection = () => {
           Inicie Sua Caminhada De Renovação Hoje Mesmo
         </h2>
         <p className="text-xl text-gray-300 mb-8">
-          Tenha acesso vitalício ao devocional completo por R$1 por dia.
+          Tenha acesso vitalício ao devocional completo por menos de R$1 por dia.
         </p>
 
         <div className="flex flex-col items-center gap-2 mb-8">
             <span className="text-gray-400 line-through text-lg">De R$ 49,90</span>
-            <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">R$ 30,00</span>
+            <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">R$ 29,90</span>
             <span className="text-green-400 font-medium">ou 6x de R$ 5,63</span>
         </div>
 
