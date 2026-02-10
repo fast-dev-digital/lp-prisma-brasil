@@ -67,9 +67,11 @@ export const BenefitsSection = () => {
                  {/* Visual representation of content (e.g., Chapter list) */}
                  <div className="space-y-4">
                      {[
-                        "Dia 01: O Segredo de Filipenses",
-                        "Dia 07: Agradeço ao Pai (Bastidores)",
-                        "Dia 15: Quando a Estrada é Longa"
+                        "Dia 01: A Chegada Vai Valer A Pena",
+                        "Dia 07: A Coroação De Jesus",
+                        "Dia 15: Angústia, Suor e Sangue",
+                        "Dia 21: Bateu O Desespero",
+                        "Dia 30: Como Seria Ter O Coração De Jesus",
                      ].map((title, i) => (
                          <div key={i} className="flex items-center gap-4 p-4 rounded-lg bg-surface/50 border border-white/5 hover:bg-white/5 transition-colors">
                              <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-gray-500 flex-shrink-0">

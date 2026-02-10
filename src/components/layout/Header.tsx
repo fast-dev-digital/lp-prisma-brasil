@@ -27,7 +27,7 @@ export const Header = () => {
   }, [lastScrollY]);
 
   const navLinks = [
-    { name: 'Sobre', href: '#sobre' },
+    { name: 'Sobre', href: '#vsl' },
     { name: 'Para Quem', href: '#quem-somos' },
     { name: 'Depoimentos', href: '#depoimentos' },
   ];

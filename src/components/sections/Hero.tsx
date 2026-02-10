@@ -49,9 +49,6 @@ export const Hero = () => {
               Quero Iniciar Minha Jornada
               <ChevronRight size={20} />
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Saiba Mais
-            </Button>
           </div>
           
           <div className="mt-8 flex items-center gap-4 text-sm text-gray-400">
