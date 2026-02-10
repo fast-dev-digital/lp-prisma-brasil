@@ -44,7 +44,7 @@ export const AudienceSection = () => {
                     <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <CheckCircle2 className="text-green-400" size={24} />
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-white">{item.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-gray-100">{item.title}</h3>
                     <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                 </div>
             ))}

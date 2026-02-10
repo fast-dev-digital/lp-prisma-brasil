@@ -35,12 +35,12 @@ export const BenefitsSection = () => {
     <Section className="bg-surface/50 border-y border-white/5">
       <Container className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
-            <span className="text-sm font-bold text-white uppercase tracking-wider mb-2 block">
+            <span className="text-sm font-bold text-gray-100 uppercase tracking-wider mb-2 block">
                 Benefícios Exclusivos
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                 Como sua fé será <br /> 
-                <span className="text-white">renovada</span> nestes 30 dias
+                <span className="text-gray-100">renovada</span> nestes 30 dias
             </h2>
             <p className="text-gray-400 mb-8 max-w-md">
                 Não é apenas um ebook ou curso, é um manual de sobrevivência e crescimento para o cristão moderno.
@@ -53,7 +53,7 @@ export const BenefitsSection = () => {
                             {benefit.icon}
                         </div>
                         <div>
-                            <h4 className="text-lg font-bold text-white mb-1">{benefit.title}</h4>
+                            <h4 className="text-lg font-bold text-gray-100 mb-1">{benefit.title}</h4>
                             <p className="text-gray-400 text-sm">{benefit.description}</p>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ export const BenefitsSection = () => {
                                  0{i + 1}
                              </div>
                              <div className="flex-1">
-                                 <h4 className="font-medium text-white text-sm md:text-base line-clamp-1">{title}</h4>
+                                 <h4 className="font-medium text-gray-200 text-sm md:text-base line-clamp-1">{title}</h4>
                              </div>
                          </div>
                      ))}

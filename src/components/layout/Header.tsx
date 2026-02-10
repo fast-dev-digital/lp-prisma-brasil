@@ -55,7 +55,7 @@ export const Header = () => {
             <a 
               key={link.name} 
               href={link.href}
-              className="text-base font-semibold text-gray-300 hover:text-white transition-colors uppercase tracking-wide"
+              className="text-base font-semibold text-gray-300 hover:text-gray-100 transition-colors uppercase tracking-wide"
             >
               {link.name}
             </a>
@@ -76,7 +76,7 @@ export const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white p-2 z-50"
+          className="md:hidden text-gray-100 p-2 z-50"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -97,7 +97,7 @@ export const Header = () => {
                 <a 
                   key={link.name} 
                   href={link.href}
-                  className="text-lg font-medium text-gray-300 hover:text-white transition-colors"
+                  className="text-lg font-medium text-gray-300 hover:text-gray-100 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

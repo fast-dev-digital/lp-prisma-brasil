@@ -20,12 +20,12 @@ export const VideoSection = () => {
   };
 
   return (
-    <Section id="vsl" className="bg-black text-white py-20 border-t border-white/5">
+    <Section id="vsl" className="bg-black text-gray-200 py-20 border-t border-white/5">
       <Container size="md" className="flex flex-col items-center">
         
         {/* Título com o Gradiente "Prisma" */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          Veja como <span className="text-white">transformar sua vida</span> agora
+          Veja como <span className="text-gray-100">transformar sua vida</span> agora
         </h2>
 
         {/* Wrapper do Vídeo */}

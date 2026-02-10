@@ -29,7 +29,7 @@ export const TestimonialsSection = () => {
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            O que dizem quem já <span className="text-white">viveu essa experiência</span>
+            O que dizem quem já <span className="text-gray-100">viveu essa experiência</span>
           </h2>
         </div>
 
@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
                     <div className="flex items-center gap-4">
                         <img src={item.image} alt={item.name} className="w-12 h-12 rounded-full ring-2 ring-white/10" />
                         <div>
-                            <h4 className="font-bold text-white">{item.name}</h4>
+                            <h4 className="font-bold text-gray-100">{item.name}</h4>
                             <p className="text-xs text-gray-500 uppercase tracking-wide">{item.role}</p>
                         </div>
                     </div>

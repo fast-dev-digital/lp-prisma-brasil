@@ -20,7 +20,7 @@ export const CTASection = () => {
 
         <div className="flex flex-col items-center gap-2 mb-8">
             <span className="text-gray-400 line-through text-lg">De R$ 49,90</span>
-            <span className="text-4xl md:text-6xl font-bold text-white tracking-tight">R$ 29,90</span>
+            <span className="text-4xl md:text-6xl font-bold text-gray-100 tracking-tight">R$ 29,90</span>
             <span className="text-green-400 font-medium">ou 6x de R$ 5,63</span>
         </div>
 

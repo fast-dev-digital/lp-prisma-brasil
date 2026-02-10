@@ -35,7 +35,7 @@ export const Hero = () => {
           
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             Não é apenas um devocional. <br />
-            <span className="text-white">
+            <span className="text-gray-100">
               É a história do Prisma Brasil edificando a sua fé.
             </span>
           </h1>
@@ -59,7 +59,7 @@ export const Hero = () => {
                 </div>
               ))}
             </div>
-            <p>Junte-se a mais de <span className="text-white font-semibold">1.200 vidas impactadas</span></p>
+            <p>Junte-se a mais de <span className="text-gray-100 font-semibold">1.200 vidas impactadas</span></p>
           </div>
         </motion.div>
         
