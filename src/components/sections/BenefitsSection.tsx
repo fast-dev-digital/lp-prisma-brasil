@@ -12,7 +12,7 @@ export const BenefitsSection = () => {
         {
             icon: <BookOpen className="text-red-500" size={28} />,
             title: "Teologia, não Autoajuda",
-            description: "Cada dia é fundamentado nas Escrituras (Ex: Filipenses), trazendo a mesma profundidade doutrinária dos nossos 45 álbuns."
+            description: "Cada dia é fundamentado nas Escrituras, (Ex: Salmos 23:1 - O Senhor é o meu pastor, nada me faltará), trazendo a mesma profundidade doutrinária dos nossos 45 álbuns."
         },
         {
             icon: <Shield className="text-green-500" size={28} />,
