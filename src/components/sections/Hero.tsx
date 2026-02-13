@@ -18,7 +18,7 @@ export const Hero = () => {
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/75 to-black/90 md:bg-gradient-to-r md:from-black md:via-black/80 md:to-transparent z-0" />
       
       <Container className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
         <motion.div
