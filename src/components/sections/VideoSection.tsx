@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export const VideoSection = () => {
   // SEU_ID_DO_VIDEO aqui
-  const VIDEO_ID = "ijf0p0naTcg"; 
+  const VIDEO_ID = "ym3P395TpPA"; 
 
   const opts: YouTubeProps['opts'] = {
     height: '100%',
